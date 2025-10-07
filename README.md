@@ -83,7 +83,7 @@ pb30base64() {
   # ハッシュ、エンコード、長さを変更
   _genpass "sha256sum" "base64" "30" "$phrase" || return 1
 
-  _register_func_dir "$pass_func"
+  _register_func_dir
 }
 
 # .bashrc を再読み込みするか、シェルを再起動すると新しい関数が使えるようになります。
