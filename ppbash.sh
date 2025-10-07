@@ -135,7 +135,7 @@ pb20gbase91() {
 
   _genpass "sha256sum" "base91" "20" "$phrase" || return 1
 
-  _register_func_dir "$pass_func"
+  _register_func_dir
 }
 
 # 60文字のbase64エンコード
@@ -150,7 +150,7 @@ pb60gbase64() {
 
   _genpass "sha512sum" "base64" "60" "$phrase" || return 1
 
-  _register_func_dir "$pass_func"
+  _register_func_dir
 }
 
 _register_func_dir
